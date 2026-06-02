@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+
+        /* :root{
+            --color: rgb(255, 0, 247);
+            --seccolor: rgb(231, 164, 246); 
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: rgb(243, 87, 8);
+            background-color: var(--color, blue);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        } */
+
+        :root{
+            --backcolor2: rgb(255, 0, 234);
+            --color: rgb(255, 0, 43);
+            --pad: 20px;
+            --gap: 40px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #colo{
+            color: black;
+        }
+
+        body{
+            background-color: var(--backcolor2, pink);
+            color: var(--color);
+        }
+
+        ul{
+            display: flex;
+            padding: var(--pad);
+            gap: var(--gap);
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul id="colo">
+            <li>Home</li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse assumenda qui ad dolorem consequuntur facilis aliquam. Unde sapiente ipsam quaerat, at debitis nesciunt, totam nulla quae ad ipsum veniam sed eligendi rem deserunt quos maiores modi. Illo eaque expedita natus iusto nostrum dolorem quos est.
+    </div>
+</body>
+</html>
