@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Assignment Part 2</title>
+    <style>
+        :root{
+            --bodycolor: rgb(56, 53, 53);
+            --fontpricolor: rgb(146, 134, 134);
+            --fontseccolor: orange;
+            --weight: 250px;
+            --height: 250px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: var(--bodycolor);
+            font-family: sans-serif;
+        }
+
+        section{
+            display: flex;
+        }
+
+        .content{
+            height: 100vh;
+            width: 50vw;
+            margin-top: 100px;
+            margin-left: 50px;
+            color: var(--fontpricolor );
+        }
+
+        .content h1{
+            color: white;
+            font-size: 40px;
+        }
+
+        .content span{
+            color: var(--fontseccolor);
+        }
+
+        .content p{
+            margin-top: 20px;
+        }
+
+        .list h2 > span{
+            margin-top: 20%;
+            font-size: 35px;
+            column-gap: 80px;
+            border-radius: 50%;
+            background-color: rgba(162, 168, 168, 0.301);
+        }
+
+        .list h2{
+            color: white;
+        }
+
+        .list p{
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        .boxes{
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
+            gap: 20px 20px;
+            justify-content: center;
+            align-content: center;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            /* background-color: wheat; */
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: none;
+        }
+
+        .box i {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+            background-color: rgba(58, 58, 56, 0.349);
+            /* border: 1px solid black; */
+            padding: 10px;
+            border-radius: 30%;
+            margin-top: 30px;
+            margin-left: 10px;
+        
+        }
+
+        .fa-globe{color: rgb(0, 119, 255)}
+        .fa-truck{color: rgba(255, 51, 0, 0.808);}
+        .fa-user{color: gray;}
+        .fa-chart-line{color: brown;}
+
+        .box1{
+            border: 1px solid rgb(0, 119, 255);
+        }
+
+        .box1:hover{
+            border: 1px solid rgb(0, 119, 255);
+            width: 260px;
+            height: 260px;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px rgb(0, 119, 255);
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <h1>Not Just a Course. <br><span>A Growth Infrastructure.</span></h1>
+            <p>Typical courses give you videos and leave you alone. We give you the supply chain, the warehouse, and the daily mentorship.</p>
+            <div class="list">
+                <h2><span>✓</span> Live Playbooks</h2>
+                <p>We update trainings instantly when algorithms change. You stay ahead.</p>
+                <h2><span>✓</span> Multi-Platform Mastery</h2>
+                <p>Don’t rely on one income stream. Dominate Amazon, eBay, and TikTok.</p>
+                <h2><span>✓</span> Built-in Logistics</h2>
+                <p>Access our UK warehouse and China sourcing agents immediately.</p>
+            </div>
+            
+        </div>
+        <div class="boxes">
+            <div class="box box1"><i class="fa-solid fa-globe"></i></i></div>
+            <div class="box box2"><i class="fa-solid fa-truck"></i></div>
+            <div class="box box3"><i class="fa-solid fa-user"></i></div>
+            <div class="box box4"><i class="fa-solid fa-chart-line"></i></div>
+        </div>
+    </section>
+</body>
+</html>
